@@ -1,0 +1,46 @@
+String Pool in Java
+
+String pool is nothing but a storage area in Java heap where string literals stores.It is also known as String Intern Pool or String Constant Pool. It is just like object allocation. By default, it is empty and privately maintained by the Java String class. Whenever we create a string the string object occupies some space in the heap memory. Creating a number of strings may increase the cost and memory too which may reduce the performance also.
+
+The JVM performs some steps during the initialization of string literals that increase the performance and decrease the memory load. To decrease the number of String objects created in the JVM the String class keeps a pool of strings.
+
+When we create a string literal, the JVM first check that literal in the String pool. If the literal is already present in the pool, it returns a reference to the pooled instance. If the literal is not present in the pool, a new String object takes place in the String pool.
+
+Creating String in Java
+There are two ways to create a string in Java:
+
+Using String Literal
+String str1 = "Python";
+
+String str2 = "Data Science";
+
+String str3 = "Python";
+
+Using new Keyword
+In Java, a new keyword is also used to create String, as follows:
+
+String str1 = new String ("Java");
+
+String str2 = new String ("C++");
+
+String str3 = new String ("Data Science");
+
+Let's understand what is the difference between them. Let's compare the string literals' references.
+
+s1==s3 //true
+
+s2==s3 //false
+
+public class StringPoolExample  
+{  
+public static void main(String[] args)   
+{  
+String s1 = "Java";  
+String s2 = "Java";  
+String s3 = new String("Java");  
+String s4 = new String("Java").intern();  
+System.out.println((s1 == s2)+", String are equal."); // true  
+System.out.println((s1 == s3)+", String are not equal."); // false  
+System.out.println((s1 == s4)+", String are equal."); // true  
+}  
+}  

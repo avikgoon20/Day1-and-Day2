@@ -1,0 +1,42 @@
+increment and decrement operators :
+Increment and decrement operators are unary operators. We can only apply these operators on a single operand, hence these operators are called as unary operators.
+
+Increment operator (++):
+Pre increment (++x)
+
+     
+int x = 10;       
+int y = ++x;       
+System.out.println("y value is: " + y);   
+
+y value is: 11
+
+
+Post increment (x++):
+
+     
+int x = 10;       
+int y = x++;       
+System.out.println("y value is: " + y);   
+    
+
+y value is: 10
+
+
+Decrement Operator (- -):
+
+Pre decrement (- -x)
+
+int x = 10;
+int y = --x;
+System.out.println("y value is: " + y);
+
+y value is: 9
+
+Post decrement (x- -):
+
+int x = 10;
+int y = x--;
+System.out.println("y value is: " + y);
+
+y value is: 10

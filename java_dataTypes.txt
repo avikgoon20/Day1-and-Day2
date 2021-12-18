@@ -1,0 +1,9 @@
+byte         Byte       1 byte      -128 to 127
+short        Short      2 bytes     32767 to -32768
+int          Integer    4 bytes     2147483647 to -2147483648 
+long         Long       8 bytes     9223372036854775807 to -9223372036854775808 
+float        Float      4 bytes     3.4028235E38 to 1.4E-45
+double       Double     8 bytes     1.7976931348623157E308 to 4.9E-324 
+char         Character  2 bytes     Stores a single character/letter or ASCII values
+String       String 
+bool         Boolean                true || false 
